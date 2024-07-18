@@ -194,6 +194,7 @@
     text-align: center;
     color: white;
     padding: 25px;
+    border:1px solid rgba(255, 255, 255, 0.308);
 }
 
 .col-habbit-box p{
@@ -224,6 +225,41 @@ color: white;
 
 
 /* ----------  Change your habbits style end  ----------- */
+
+
+/* running style start */
+
+.running-miles{
+    grid-template-columns: repeat(2, 1fr);
+    gap:25px;
+}
+
+
+.col-extra-running{
+    padding:30px 32px;
+}
+
+.col-extra-running img{
+    width:100%;
+    border-radius: 8px;
+
+}
+
+.back-color{
+    background-color:rgba(255, 255, 255, 0.219);
+    border-radius: 12px;
+}
+
+.col-extra-running h3{
+    color: white;
+    font-size: 3rem;
+}
+
+.col-extra-running p{
+    color: white;
+}
+
+/* running style end */
 
 
 /* --------------------  Shared style start   ----------------------- */
@@ -297,12 +333,12 @@ color: white;
     }
 
     .video-card{
-        bottom: -140%;
+        bottom: -100%;
         right:50%;
 
     }
     .workout-content{
-        top: 140%;
+        top: 100%;
     }
 
     .habits-containers{
