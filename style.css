@@ -4,12 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
-
+*{
+    box-sizing: border-box;
+}
 
 .bg-color{
     background-color:rgb(0, 0, 0)
 }
 
+/* .position-relative{
+    position: relative;
+} */
 
 /* -----------------  Navbar style start   -------------------- */
 
@@ -231,7 +236,7 @@ color: white;
 
 .running-miles{
     grid-template-columns: repeat(2, 1fr);
-    gap:65px;
+    gap:120px;
 }
 
 
@@ -246,7 +251,7 @@ color: white;
 }
 
 .back-color{
-    background-color:rgba(255, 255, 255, 0.219);
+    background-color:rgba(255, 255, 255, 0.1);
     border-radius: 12px;
 }
 
@@ -254,6 +259,7 @@ color: white;
     color: white;
     font-size: 3rem;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .col-extra-running p{
@@ -266,6 +272,89 @@ color: white;
 }
 
 /* running style end */
+
+
+/* -------------------    Table chart start      -------------------- */
+
+.col-calculate-chart-box h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.col-calculate-bmi-box h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+.col-calculate-bmi-box p{
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+}
+
+table, td, th {  
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 60%;
+
+  }
+  
+  th{
+    color: white;
+  }
+
+  td {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.432);
+  }
+  .col-calculate-chart{
+    flex: 50%;
+}
+
+
+
+input[type=text] {
+    padding: 12px 20px;
+    width: 47%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f134;
+    border-radius: 5px;
+    border:none;
+    color: white;
+}
+
+
+
+select{
+    width: 47%;
+    padding: 8px 18px;
+    background-color: #f1f1f13f;
+    border-radius: 5px;
+    border:none;
+    color: #ffffff7c
+}
+
+input::placeholder {
+    color: #ffffff7c; /* Change to your desired color */
+}
+
+.select-activity{
+    width: 97%;
+    background-color: #f1f1f13f;
+    border-radius: 5px;
+    border:none;
+}
+/* -------------------    Table chart end      -------------------- */
+
 
 
 /* --------------------  Shared style start   ----------------------- */
@@ -375,9 +464,9 @@ color: white;
         padding: 25px 0px;
     }
 
-    .col-extra-running h3, p{
+    /* .col-extra-running h3, p{
         padding: 0px 45px 0px 15px;
-    }
+    } */
 }
 
 
