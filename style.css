@@ -231,7 +231,7 @@ color: white;
 
 .running-miles{
     grid-template-columns: repeat(2, 1fr);
-    gap:25px;
+    gap:65px;
 }
 
 
@@ -241,7 +241,7 @@ color: white;
 
 .col-extra-running img{
     width:100%;
-    border-radius: 8px;
+    border-radius: 12px;
 
 }
 
@@ -253,10 +253,16 @@ color: white;
 .col-extra-running h3{
     color: white;
     font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 .col-extra-running p{
-    color: white;
+    color: rgba(255, 255, 255, 0.486);
+    margin-bottom: 20px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+
 }
 
 /* running style end */
@@ -285,6 +291,16 @@ color: white;
     background-color: #E6533C;
     color: white;
     border: none;
+    border-radius: 50px;
+}
+
+.btn-primary-long{
+    font-size: 20px;
+    padding: 12px 45px;
+    background-color: #E6533C;
+    color: white;
+    border: none;
+    letter-spacing: 2px;
     border-radius: 50px;
 }
 
@@ -348,6 +364,19 @@ color: white;
     .habbits-content .habbit-content-text{
 
         padding:0px;
+    }
+
+    .running-miles{
+        flex-direction: column;
+    }
+
+    .btn-primary-long{
+        width:100%;
+        padding: 25px 0px;
+    }
+
+    .col-extra-running h3, p{
+        padding: 0px 45px 0px 15px;
     }
 }
 
