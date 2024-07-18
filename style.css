@@ -209,6 +209,18 @@
     padding:0px 180px;
 }
 
+.habbits-content .habbit-content-text h2{
+font-size: 2.5rem;
+color: white;
+}
+
+
+.habbits-content .habbit-content-text p{
+    color:rgba(255, 255, 255, 0.486);
+
+}
+
+
 
 
 /* ----------  Change your habbits style end  ----------- */
@@ -291,6 +303,15 @@
     }
     .workout-content{
         top: 140%;
+    }
+
+    .habits-containers{
+        grid-template-columns: 1fr;
+    }
+
+    .habbits-content .habbit-content-text{
+
+        padding:0px;
     }
 }
 
