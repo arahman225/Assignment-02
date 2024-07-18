@@ -296,6 +296,10 @@ color: white;
     margin-bottom: 2rem;
 }
 
+form{
+    margin-bottom: 2rem;
+}
+
 table, td, th {  
     border: 1px solid rgba(255, 255, 255, 0.404);
     text-align: left;
@@ -309,6 +313,7 @@ table, td, th {
   
   th{
     color: white;
+    padding:15px;
   }
 
   td {
@@ -336,7 +341,7 @@ input[type=text] {
 
 select{
     width: 47%;
-    padding: 8px 18px;
+    padding: 12px 20px;
     background-color: #f1f1f13f;
     border-radius: 5px;
     border:none;
@@ -352,14 +357,49 @@ input::placeholder {
     background-color: #f1f1f13f;
     border-radius: 5px;
     border:none;
+
 }
 /* -------------------    Table chart end      -------------------- */
 
 
+/* Meet our team member style start */
+
+.meet-our-team{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.col-meet-img{
+    padding:10px;
+    border-radius: 12px;
+}
+.col-meet-img img{
+    width:100%; 
+    height: 260px;   
+    border-radius: 12px;
+
+}
+
+.col-meet-team{
+    position: relative;
+}
+
+.col-meet-text{
+    position: absolute;
+    bottom:10%;
+    left:5%;
+    color: white;
+}
+
+.col-meet-text h4{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Meet our team member style end */
+
+
 
 /* --------------------  Shared style start   ----------------------- */
-
-
 
 .display-flex{
     display: flex;
@@ -375,6 +415,15 @@ input::placeholder {
     padding: 50px 0px;
 }
 
+.heading{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.para{
+    color:rgba(255, 255, 255, 0.486);
+}
+
 .btn-primary{
     padding: 12px 26px;
     background-color: #E6533C;
@@ -384,7 +433,9 @@ input::placeholder {
 }
 
 .btn-primary-long{
-    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
     padding: 12px 45px;
     background-color: #E6533C;
     color: white;
@@ -464,9 +515,13 @@ input::placeholder {
         padding: 25px 0px;
     }
 
-    /* .col-extra-running h3, p{
-        padding: 0px 45px 0px 15px;
-    } */
+    .calculator-content{
+        flex-direction: column;
+    }
+
+    table{
+       width: 100%;
+    }
 }
 
 
