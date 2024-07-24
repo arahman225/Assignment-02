@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
 
 
 *{
@@ -12,9 +12,9 @@
     background-color:rgb(0, 0, 0)
 }
 
-/* .position-relative{
+.position-relative{
     position: relative;
-} */
+}
 
 /* -----------------  Navbar style start   -------------------- */
 
@@ -37,9 +37,7 @@
 .navbar .menu-links {
     border: 1px solid rgba(255, 255, 255, 0.205);
     border-radius: 50px;
-    padding:8px 0px;
-
-    
+    padding:8px 0px; 
 }
 
 .navbar .menu-links li{
@@ -118,51 +116,73 @@
 
 
 .video-card{
-
-    
-    background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgba(0, 0, 0, 0.308);
     display: flex;
     color: white;
+    position: absolute;
+    bottom:15%;
+    left: -30%;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    bottom:2%;
-    right:25%;
-    backdrop-filter: blur(15px);
-
-    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    padding: 8px 10px;
 }
 
 .video-card .video-text{
     padding:5px 15px;
+
+}
+.video-card .video-text h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:3rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-weight: 700;
+}
+
+.video-card .video-text p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-weight: 400;
+    color:#f1f1f16c;
 }
 
 
 .workout-content{
-    
-    background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgba(207, 206, 206, 0.123);
     color: white;
-    position: absolute;
-    top:45%;
-    right:7%;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(50px);
     border-radius: 8px;
-
-}
-
-.workout-content .workout-text{
+    position: absolute;
+    top:20%;
+    right:1%;
     padding:5px 15px;
 }
 
+/* .workout-content .workout-text{
 
-.workout-video h3{
-    font-family: "Inter", sans-serif;
+} */
+
+
+.workout-text h3{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: 900;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    margin-top: 5px;
 }
 
-
+.workout-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color:#f1f1f16c;
+}
 .video-text{
     padding-left: 20px;
 }
@@ -200,6 +220,7 @@
     color: white;
     padding: 25px;
     border:1px solid rgba(255, 255, 255, 0.308);
+    border-radius: 8px;
 }
 
 .col-habbit-box p{
@@ -218,6 +239,7 @@
 .habbits-content .habbit-content-text h2{
 font-size: 2.5rem;
 color: white;
+margin-bottom: 17px;
 }
 
 
@@ -276,6 +298,17 @@ color: white;
 
 /* -------------------    Table chart start      -------------------- */
 
+.section-title-chart{
+    color: white;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title-chart h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
 .col-calculate-chart-box h3{
     font-size: 1.7rem;
     font-weight: 700;
@@ -359,6 +392,14 @@ input::placeholder {
     border:none;
 
 }
+
+.col-calculate-bmi-box button{
+    margin-bottom: 15px;
+}
+.calculator-content{
+    padding: 35px 0px;
+}
+
 /* -------------------    Table chart end      -------------------- */
 
 
@@ -369,12 +410,12 @@ input::placeholder {
 }
 
 .col-meet-img{
-    padding:15px;
+    padding:10px;
     border-radius: 12px;
 }
 .col-meet-img img{
     width:100%; 
-    height: 290px;   
+    height: 320px;   
     border-radius: 12px;
 
 }
@@ -396,9 +437,133 @@ input::placeholder {
     margin-bottom: 5px;
 }
 
+.col-meet-text p{
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
 /* Meet our team member style end */
 
+/* --------------  popular class style start   -------------- */
 
+.col-popular-class-box{
+    color: white;
+}
+
+.col-popular-class{
+    border:1px solid rgba(255, 255, 255, 0.308);
+    border-radius: 8px;
+    margin:5px;
+    background-color: rgba(255, 255, 255, 0.171);
+    
+}
+
+.col-popular-class-box{
+    padding: 15px;
+    transition: .3s ease-in;
+}
+
+.col-popular-class-box:hover{
+    box-shadow: 0 4px 8px 0 rgba(8, 53, 80, 0.568), 0 6px 20px 0 rgba(8, 53, 80, 0.568);
+}
+
+.section-title{
+    margin-bottom: 50px;
+}
+
+.section-title .heading{
+    margin-bottom: 10px;
+}
+.popular-class-content{
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+
+}
+
+.col-popular-class-box h4{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+
+.col-popular-class-box img{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* --------------  popular class style end   -------------- */
+
+
+/* ------------------- Footer style start ------------------- */
+
+.footer-content{
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+}
+
+.col-footer-box h3{
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+    color:#E6533C;
+    margin-bottom: 10px;
+}
+
+.col-footer{
+    padding-bottom: 30px;
+}
+.col-footer-box p{
+    line-height: 1.5rem;
+}
+
+.col-footer-box > li{
+    display:  inherit;
+    list-style: none;
+    padding: 8px 0px;
+    margin-left: 0px;
+    transition: .5s;
+}
+
+.col-footer-box > li a{
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color:#ffffff70;
+    font-size: 20px;
+
+}
+
+.all-right{
+    font-family: "Inter", sans-serif;
+    padding: 15px 0px;
+    text-align: center;
+    color:#ffffff70;
+}
+
+.col-footer-box h4{
+    font-family: "Inter", sans-serif;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* .col-footer{
+    border-bottom: 2px solid #ffffff27;
+} */
+
+.col-footer-box li:hover{
+    transform: translateX(12px);
+}
+
+.all-right{
+    border-top: 2px solid #ffffff27;
+}
+
+/* ------------------- Footer style end ------------------- */
 
 /* --------------------  Shared style start   ----------------------- */
 
@@ -434,10 +599,11 @@ input::placeholder {
 }
 
 .btn-primary-long{
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing:2px;
     font-weight: 600;
-    padding: 12px 45px;
+    padding: 17px 70px;
     background-color: #E6533C;
     color: white;
     border: none;
@@ -449,17 +615,14 @@ input::placeholder {
     padding: 12px 26px;
     background-color: transparent;
     color: white;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.384);
     border-radius: 50px;
 }
 
 .container{
-    max-width: 1070px;
+    max-width: 85%;
     margin: 0 auto;
 }
-
-
-
 
 /* --------------------  Shared style end   ----------------------- */
 
@@ -490,25 +653,27 @@ input::placeholder {
     }
 
     .video-card{
-        bottom: -100%;
-        right:50%;
+        left:10%;
 
     }
-    .workout-content{
+    /* .workout-content{
         top: 100%;
-    }
+    } */
 
     .habits-containers{
         grid-template-columns: 1fr;
     }
 
     .habbits-content .habbit-content-text{
-
-        padding:0px;
+        padding:10px;
     }
 
     .running-miles{
         flex-direction: column;
+    }
+
+    .col-extra-running img{
+        margin-top: -120px;
     }
 
     .btn-primary-long{
@@ -528,6 +693,21 @@ input::placeholder {
         grid-template-columns: 1fr;
         padding:15px;
     }
+    .popular-class-content{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content{
+        grid-template-columns: 1fr;
+        justify-items: start;
+
+    }
+
+    .col-popular-class{
+        width:100%;
+        margin-left: 0;
+    }
+
 }
 
 
