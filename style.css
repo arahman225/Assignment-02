@@ -184,7 +184,7 @@
     color:#f1f1f16c;
 }
 .video-text{
-    padding-left: 20px;
+    margin-left: 10px;
 }
 
 .video-icon{
@@ -195,7 +195,8 @@
 
 .video-icon{
     background-color: #E6533C;
-    padding:10px;
+    width:50px;
+    height: 50px;
     border-radius: 100%;
     font-size: 2rem;
 }
@@ -365,7 +366,7 @@ table, td, th {
 
 input[type=text] {
     padding: 12px 20px;
-    width: 47%;
+    width: 46.9%;
     margin-right: 10px;
     margin-bottom: 10px;
     background-color: #f1f1f134;
@@ -377,7 +378,7 @@ input[type=text] {
 
 
 select{
-    width: 47%;
+    width: 46.9%;
     padding: 12px 20px;
     background-color: #f1f1f13f;
     border-radius: 5px;
