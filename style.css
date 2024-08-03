@@ -197,15 +197,12 @@
 
 .video-icon{
     background-color: #E6533C;
-    width:30px;
-    height: 30px;
+    width:40px;
+    height: 40px;
     border-radius: 100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-/* .video-icon .fa-play-circle{
-background-color: rgb(236, 17, 17);
-} */
 
 /* -----------banner style end------------------------------- */
 
